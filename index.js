@@ -238,6 +238,7 @@ const teamComplete = () => {
   .then(answer => {
     if(answer.teamConfirm){
       //write file 
+      console.log("writing file");
     } else {
       promptMenu();
     }
