@@ -10,5 +10,23 @@ header {
 }
 
 main{ 
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+  padding: 10px;
+}
+
+.card{
+  justify-content: center;
   
 }
+
+.card-header {
+  color: white;
+  background-color: teal;
+}
+
+.email{
+  color:blue;
+}
+

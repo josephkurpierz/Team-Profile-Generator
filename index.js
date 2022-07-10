@@ -237,8 +237,7 @@ const teamComplete = () => {
     message: 'Is this team complete?'
   })
   .then(answer => {
-    if(answer.teamConfirm){
-      //write file 
+    if(answer.teamConfirm){   
       fs.writeFile('./dist/index.html',generateHTML(team), (err) => {
         if (err) throw err;
         console.log("writing file");
