@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 const Manager = require('./lib/Manager');
 const Intern = require('./lib/Intern');
 const Engineer = require('./lib/Engineer');
+const generateHTML = require('./src/generateHTML');
 const team = [];
 
 
@@ -227,7 +228,7 @@ const promptIntern = () => {
   })
 };
 
-//assemble team of managers, engineers, and interns
+//assemble team of managers, engineers, and interns and write to file
 const teamComplete = () => {
   console.log(team);
   return inquirer.prompt({
@@ -238,7 +239,10 @@ const teamComplete = () => {
   .then(answer => {
     if(answer.teamConfirm){
       //write file 
-      console.log("writing file");
+      fs.writeFile('./dist/index.html',generateHTML(team), (err) => {
+        if (err) throw err;
+        console.log("writing file");
+      })
     } else {
       promptMenu();
     }

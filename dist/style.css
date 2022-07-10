@@ -1,0 +1,14 @@
+header {
+  color: white;
+  background-color: pink;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  margin: 15px;
+  padding: 10px;
+}
+
+main{ 
+  
+}
