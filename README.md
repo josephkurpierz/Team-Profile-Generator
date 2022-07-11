@@ -14,6 +14,7 @@
   
   ## Description
   This app builds an HTML page to display a team, which can consist of Managers, Engineers, and Interns.  Each employee fulfills a card that has pertinent information about them such as name and email address
+  
   [Video Demo](https://drive.google.com/file/d/1UFXxz-yQvyf23yECjSuVJy9FAic02Ahy/view)
 
   ## Installation

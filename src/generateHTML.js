@@ -13,7 +13,7 @@ const generateHTML = (team) => {
       <div class="card-body">
         <ul class="list-group">
           <li class="list-group-item">ID: ${manager.id}</li>
-          <li class="list-group-item">Email:<span id="email"><a href="mailto: ${manager.email}"> ${manager.email}</a></span></li>
+          <li class="list-group-item">Email:<span class="email"><a href="mailto: ${manager.email}"> ${manager.email}</a></span></li>
           <li class="list-group-item">Office Number: <br>${manager.officeNumber}</li>
         </ul>
       </div>
@@ -32,8 +32,8 @@ const generateHTML = (team) => {
       <div class="card-body">
         <ul class="list-group">
           <li class="list-group-item">ID: ${engineer.id}</li>
-          <li class="list-group-item">Email:<span id="email"><a href="mailto: ${engineer.email}"> ${engineer.email}</a></span></li>
-          <li class="list-group-item">github: <a href="https://github.com/${engineer.github}"</a>${engineer.github}</li>
+          <li class="list-group-item">Email:<span class="email"><a href="mailto: ${engineer.email}"> ${engineer.email}</a></span></li>
+          <li class="list-group-item">github: <a href="https://github.com/${engineer.github}" target=_blank>${engineer.github}</a></li>
         </ul>
       </div>
     </div>
@@ -51,7 +51,7 @@ const generateHTML = (team) => {
       <div class="card-body">
         <ul class="list-group">
           <li class="list-group-item">ID: ${intern.id}</li>
-          <li class="list-group-item">Email:<span id="email"><a href="mailto: ${intern.email}"> ${intern.email}</a></span></li>
+          <li class="list-group-item">Email:<span class="email"><a href="mailto: ${intern.email}"> ${intern.email}</a></span></li>
           <li class="list-group-item">School: ${intern.school}</li>
         </ul>
       </div>
