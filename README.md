@@ -14,6 +14,7 @@
   
   ## Description
   This app builds an HTML page to display a team, which can consist of Managers, Engineers, and Interns.  Each employee fulfills a card that has pertinent information about them such as name and email address
+  ![Video Demo](https://drive.google.com/file/d/1UFXxz-yQvyf23yECjSuVJy9FAic02Ahy/view)
 
   ## Installation
   If using the package.json simply type `npm install` into the terminal.  Otherwise you would need to `npm init` and then `npm install inquirer`. This app uses inquirer version 6.5.2
